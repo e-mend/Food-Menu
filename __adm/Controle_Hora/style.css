@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    position: relative;
+    background-color: whitesmoke;
+    font-family: 'Noto Sans', 'Source Sans Pro';
+}
+
+.Controle{
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+
+    right: 0%;
+    border: 1px solid #ddd;
+
+
+    background-color: whitesmoke;
+}
+
+.Controle2{
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+
+    left: 1%;
+    border: 1px solid #ddd;
+
+
+    background-color: whitesmoke;
+}
+
+.Controle tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.Controle2 tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.Controle tr:nth-child(1) {
+    background-color: #ddd;
+}
+
+.Controle2 tr:nth-child(1) {
+    background-color: #ddd;
+}
+
+.Controle tr:hover {
+    background-color: #ddd;
+}
+
+.Controle2 tr:hover {
+    background-color: #ddd;
+}
+
+.Controle table{
+    width: 100%;
+    height: 100%;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+
+    margin: 0 auto;
+}
+
+.Controle2 table{
+    width: 100%;
+    height: 100%;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+
+    margin: 0 auto;
+}
+
+
+.Controle tr{
+    width: 30px;
+    height: 10px;
+}
+
+.Controle2 tr{
+    width: 30px;
+    height: 10px;
+}
+
+
+.Controle th, .Controle td{
+
+    width: 30px;
+    height: 10px;
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Controle2 th, .Controle2 td{
+
+    width: 30px;
+    height: 10px;
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.img-size{
+    width: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.img-size img{
+    width: 100%;
+
+}
+
+.marmitao{
+    width: 100% !important;
+    font-size: 12px !important;
+    margin: 0 1px !important;
+}
+
+.controle3{
+    width: 50vw;
+    height: 100vh;
+    color: #ddd;
+
+    border: 1px solid #ddd;
+
+    text-align: center;
+    background-color: black;
+}
+
+.ITEMS-CONTROLLER{
+    width: 90%;
+    height: 45%;
+    background-color: black;
+    display: inline-block;
+
+    font-family: 'Noto Sans', 'Source Sans Pro';
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ITEMS-CONTROLLER p{
+    width: 100px;
+    display: inline-block;
+    margin: 10px 10px;
+    background-color: black;
+    color: #ddd;
+    
+    
+
+    text-align: center;
+}
+
+.delete{
+    background: black;
+	color: white;
+	border-style: outset;
+	border-color: whitesmoke;
+	height: 50px;
+	width: 50%;
+	text-shadow: none;
+    font-family: 'Noto Sans', 'Source Sans Pro';
+    font-weight: bolder;
+
+    cursor: pointer;
+    float: left;
+}
+
+.update{
+    background: black;
+	color: white;
+	border-style: outset;
+	border-color: whitesmoke;
+	height: 50px;
+	width: 50%;
+	text-shadow: none;
+    font-family: 'Noto Sans', 'Source Sans Pro';
+    font-weight: bolder;
+
+    cursor: pointer;
+    float: left;
+}
+
+#ADCIONAR{
+    width: 300px;
+    height: 30px;
+    border: none;
+    margin: 10px;
+
+    text-shadow: none;
+    font-family: 'Noto Sans', 'Source Sans Pro';
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+
+.inputy select, .inputy option{
+    width:300px; 
+    height: 40px;
+
+    border: none;
+    text-shadow: none;
+    font-family: 'Noto Sans', 'Source Sans Pro';
+    font-weight: bolder;
+    font-size: 20px;
+
+    margin: 2px;
+}
+
+.remover1{
+    width:100%; 
+
+}
+
+.remover1 select, .remover1 option{
+    width:500px; 
+    height: 40px;
+
+    border: none;
+    text-shadow: none;
+    font-family: 'Noto Sans', 'Source Sans Pro';
+    font-weight: bolder;
+    font-size: 20px;
+
+    margin: 30px 0 0 0;
+}
+
+.clear{
+    clear: both;
+}
