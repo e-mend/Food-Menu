@@ -1,12 +1,4 @@
 <?php
-date_default_timezone_set('America/Sao_Paulo');
-
-$server = "localhost";
-$user = "root";
-$pass = "";
-$dbname = "ponto";
-
-$conn = mysqli_connect($server, $user, $pass, $dbname);
 
 $fullname = "SELECT NOME, ID FROM funcionario WHERE TIPO_FUNCIONARIO = 'CONTRATADO'";
 $full = $conn->query($fullname) or die($conn->error);
@@ -24,3 +16,15 @@ $fullorder = "SELECT Comida FROM funcionario";
 $order = $conn->query($fullorder) or die($conn->error);
 
 
+$hoje = date('Y/m/d');
+$fullj = "SELECT * FROM funcionario LEFT JOIN registros ON funcionario.CODIGO = registros.CODIGO AND DATA = '{$hoje}' WHERE TIPO_FUNCIONARIO = 'CONTRATADO'";
+$fulljair = $conn->query($fullj) or die($conn->error);
+
+$foody = "SELECT ITENS, ATIVO, Comida, TIPO FROM funcionario WHERE TIPO <> 'TAMANHO' AND ITENS <> ''";
+$fullfoodyy = $conn->query($foody) or die($conn->error);
+
+$fullleft = "SELECT ITENS, ATIVO, TIPO FROM funcionario WHERE TIPO <> 'TAMANHO' AND ITENS <> ''";
+$lefty = $conn->query($fullleft) or die($conn->error);
+
+
+?>

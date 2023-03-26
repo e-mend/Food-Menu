@@ -1,23 +1,3 @@
-<?php
-
-include ('../../CONEXAO.php');
-
-$fullname = "SELECT * FROM funcionario WHERE TIPO_FUNCIONARIO = 'CONTRATADO'";
-$full = $conn->query($fullname) or die($conn->error);
-
-$hoje = date('Y/m/d');
-$fullj = "SELECT * FROM funcionario LEFT JOIN registros ON funcionario.CODIGO = registros.CODIGO AND DATA = '{$hoje}' WHERE TIPO_FUNCIONARIO = 'CONTRATADO'";
-$fulljair = $conn->query($fullj) or die($conn->error);
-
-$foody = "SELECT ITENS, ATIVO, Comida, TIPO FROM funcionario WHERE TIPO <> 'TAMANHO' AND ITENS <> ''";
-$fullfoodyy = $conn->query($foody) or die($conn->error);
-
-$fullleft = "SELECT ITENS, ATIVO, TIPO FROM funcionario WHERE TIPO <> 'TAMANHO' AND ITENS <> ''";
-$lefty = $conn->query($fullleft) or die($conn->error);
-
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,13 +52,13 @@ if (window.history.replaceState) {
 
 							 if(is_string($hor["HORA_ENTRADA"]) === true && $hor["HORA_ENTRADA"] === "FALTA" OR $hor["HORA_ENTRADA"] === "" OR $hor["HORA_ENTRADA"] == null){
 
-								echo "<img src='remove.png'>";
+								echo "<img src='img/remove.png'>";
 								echo $hor["HORA_ENTRADA"];
 
 
 								}else{
 
-								echo "<img src='checked.png'>";
+								echo "<img src='img/checked.png'>";
 
 								echo $hor["HORA_ENTRADA"];
 
@@ -95,13 +75,13 @@ if (window.history.replaceState) {
 
 							 if(is_string($hor["HORA_SAIDA"]) === true && $hor["HORA_SAIDA"] === "FALTA" OR $hor["HORA_SAIDA"] === "" OR $hor["HORA_SAIDA"] == null){
 
-								echo "<img src='remove.png'>";
+								echo "<img src='img/remove.png'>";
 								echo $hor["HORA_SAIDA"];
 
 
 								}else{
 
-								echo "<img src='checked.png'>";
+								echo "<img src='img/checked.png'>";
 
 								echo $hor["HORA_SAIDA"];
 

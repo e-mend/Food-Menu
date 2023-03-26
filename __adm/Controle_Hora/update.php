@@ -1,6 +1,6 @@
 <?php
 
-require('../../CONEXAO.php');
+require('../../config/conexao_db.php');
 $rnm = rand(10000, 99999);
 $tipoo = strtoupper($_POST["tipo"]);
 
@@ -39,4 +39,4 @@ if(isset($_POST['retirar'])){
 
 mysqli_close($conn);
 
-header('Location: CH.php');
+header('Location: Controller.php');
