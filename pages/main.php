@@ -26,7 +26,7 @@
               MARMITEX JÁ
               </h2>
               
-              <form method="post" name="Pedido" action="<?= $BASE_URL ?>/action/pedir.php">
+              <form method="post" name="Pedido" action="action/pedir.php">
 
 
               <div class="select" style="width:100%;">
@@ -125,6 +125,9 @@
 
       <div class="adm-menu">
             <h3><a href="__adm/Controle_Hora/controller.php">MENU ADM</a><h3>
+
       </div>
+
+      
 </body>
 </html>
