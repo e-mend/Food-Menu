@@ -1,6 +1,6 @@
 <?php
 
-require("CONEXAO.php");
+require("../config/conexao_db.php");
 
 // foreach($_POST['checkbox'] as $checkbox){
 //     echo $checkbox . '<hr>';
@@ -36,5 +36,5 @@ if(mysqli_query($conn, $sql)){
 
 mysqli_close($conn);
 
-header('Location: index.php');
+// header('Location: index.php');
 

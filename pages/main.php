@@ -26,7 +26,7 @@
               MARMITEX JÁ
               </h2>
               
-              <form method="post" name="Pedido" action="PEDIDOS.php">
+              <form method="post" name="Pedido" action="<?= $BASE_URL ?>/action/pedir.php">
 
 
               <div class="select" style="width:100%;">
